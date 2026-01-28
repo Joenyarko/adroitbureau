@@ -1,0 +1,8 @@
+﻿/* Logo Styles */
+.logo-img {
+  max-width: none !important;
+  max-height: 100px !important;
+  height: auto;
+  width: auto;
+  display: block;
+}
