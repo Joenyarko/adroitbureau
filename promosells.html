@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromoSells - Sales, Returns & Stock Tracking Software - Adroit Bureau</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/adroit-theme.css">
+    <link rel="stylesheet" href="styles/responsive-product-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/Adroit Logo.jpeg" alt="Adroit Bureau" class="logo-img">
+            </a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Enterprise Solutions</a>
+                    <div class="dropdown-menu">
+                        <a href="lite-accounting.html">Lite Accounting</a>
+                        <a href="smart-accounting.html">Smart Accounting</a>
+                        <a href="total-accounting.html">Total Accounting</a>
+                        <a href="adroit-erp.html">Adroit ERP</a>
+                        <a href="tell-them-app.html">Tell Them App</a>
+                        <a href="promosells.html">Promosells</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Subsidiaries</a>
+                    <div class="dropdown-menu">
+                        <a href="subsidiaries.html#adroit-cloud">Adroit Cloud</a>
+                        <a href="subsidiaries.html#adroit-games">Adroit Games</a>
+                        <a href="subsidiaries.html#adroit-finance">Adroit Finance</a>
+                        <a href="subsidiaries.html#adroit-consortium">Adroit Consortium</a>
+                        <a href="subsidiaries.html#software-university">Software University</a>
+                        <a href="https://swllearn.com/" target="_blank" rel="noopener noreferrer">SWL Learn</a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Partners</a>
+                    <div class="dropdown-menu">
+                        <a href="https://sbincsolutions.com/" target="_blank" rel="noopener noreferrer">SBINC</a>
+                        <a href="https://amanzillc.com/" target="_blank" rel="noopener noreferrer">Amanzi Group LLC</a>
+                    </div>
+                </div>
+
+                <a href="directors.html">Directors</a>
+                <a href="https://vimeo.com/showcase/7847277" target="_blank" rel="noopener noreferrer">Software
+                    Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="mobile-only-link">Contact Us</a>
+            </nav>
+
+            <!-- Contact & Language Switcher -->
+            <div class="nav-actions">
+                <a href="contact.html" class="cta">Contact Us</a>
+
+                <!-- Language Switcher - Static EN -->
+                <div class="nav-dropdown lang-switcher">
+                    <a href="#" class="dropdown-toggle">
+                        EN <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="?lang=en">EN</a>
+                        <a href="?lang=fr">FR</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="promo-hero section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 font-weight-bold mb-3 text-dark" data-i18n="hero_heading">Manage Sales, Returns
+                        & <span class="text-adroit-red">Distributed Stock</span> — All in One Place</h1>
+                    <p class="lead mb-4 text-muted">PromoSells helps businesses track sales, manage returns, and monitor
+                        stock left with agents or customers in real time.</p>
+                    <div class="hero-btns">
+                        <a href="#features" class="btn btn-adroit-primary btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/promosells_hero.png" alt="PromoSells App and Dashboard Mockup"
+                        class="img-fluid hero-mockup shadow-lg rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PROBLEM STATEMENT -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="font-weight-bold">Sales Tracking Should not Be This Hard</h2>
+                    <p class="text-muted">Are you facing these common challenges?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="problem-card card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="icon mb-3 text-adroit-red"><i class="fas fa-exclamation-triangle fa-2x"></i></div>
+                        <h5 class="font-weight-bold">Difficulty Tracking Sales</h5>
+                        <p class="small text-muted">Spreadsheets are messy and hard to keep up to date.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="problem-card card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="icon mb-3 text-adroit-red"><i class="fas fa-eye-slash fa-2x"></i></div>
+                        <h5 class="font-weight-bold">No Stock Visibility</h5>
+                        <p class="small text-muted">Blind spots on stock held by field agents or distributors.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="problem-card card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="icon mb-3 text-adroit-red"><i class="fas fa-file-excel fa-2x"></i></div>
+                        <h5 class="font-weight-bold">Manual Errors</h5>
+                        <p class="small text-muted">Data entry mistakes lead to lost revenue.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="problem-card card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="icon mb-3 text-adroit-red"><i class="fas fa-user-clock fa-2x"></i></div>
+                        <h5 class="font-weight-bold">Poor Accountability</h5>
+                        <p class="small text-muted">Hard to verify remote sales activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SOLUTION OVERVIEW -->
+    <section class="section-padding bg-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="font-weight-bold mb-3 text-adroit-red">PromoSells Solves All of This</h2>
+                    <p class="lead text-dark">PromoSells centralizes sales, returns, campaigns, and stock tracking into
+                        one simple platform accessible on mobile and web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FEATURES -->
+    <section id="features" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">Everything You Need to Scale</h2>
+            </div>
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-chart-line fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Sales Management</h5>
+                            <p class="text-muted">Track every sale in real-time from anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-undo fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Returns Tracking</h5>
+                            <p class="text-muted">Manage product returns and reasons effortlessly.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-boxes fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Stock Tracking</h5>
+                            <p class="text-muted">Monitor distributed stock across all locations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-bullhorn fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Campaign Management</h5>
+                            <p class="text-muted">Run and track promotional campaigns easily.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-tachometer-alt fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Real-time Dashboard</h5>
+                            <p class="text-muted">Visual reports for instant business insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-item d-flex align-items-start">
+                        <div class="icon mr-3 text-adroit-red"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                        <div>
+                            <h5 class="font-weight-bold">Mobile & Web Access</h5>
+                            <p class="text-muted">Access your data on any device, anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: HOW IT WORKS -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">How PromoSells Works</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="step-card">
+                        <span class="step-number bg-adroit-red text-white ro-circle d-inline-block rounded-circle mb-3"
+                            style="width: 40px; height: 40px; line-height: 40px;">1</span>
+                        <h6 class="font-weight-bold">Create Campaigns</h6>
+                        <p class="small text-muted">Set up campaigns and assign stock to agents.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="step-card">
+                        <span class="step-number bg-adroit-red text-white ro-circle d-inline-block rounded-circle mb-3"
+                            style="width: 40px; height: 40px; line-height: 40px;">2</span>
+                        <h6 class="font-weight-bold">Record Sales</h6>
+                        <p class="small text-muted">Agents record sales/returns on the mobile app.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="step-card">
+                        <span class="step-number bg-adroit-red text-white ro-circle d-inline-block rounded-circle mb-3"
+                            style="width: 40px; height: 40px; line-height: 40px;">3</span>
+                        <h6 class="font-weight-bold">Track Stock</h6>
+                        <p class="small text-muted">Watch inventory levels update automatically.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="step-card">
+                        <span class="step-number bg-adroit-red text-white ro-circle d-inline-block rounded-circle mb-3"
+                            style="width: 40px; height: 40px; line-height: 40px;">4</span>
+                        <h6 class="font-weight-bold">View Reports</h6>
+                        <p class="small text-muted">Analyze performance on the dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PRODUCT SHOWCASE -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">Visuals That Build Trust</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img src="images/promosell1.png" alt="PromoSells Web Dashboard"
+                        class="img-fluid rounded shadow hover-scale">
+                    <p class="text-center mt-3 font-weight-bold">Comprehensive Web Dashboard</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <img src="images/promosell2.png" alt="PromoSells Mobile App"
+                        class="img-fluid rounded shadow hover-scale"
+                        style="max-height: 500px; object-fit: contain; width: 100%;">
+                    <p class="text-center mt-3 font-weight-bold">Intuitive Mobile App</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: WHO IT’S FOR -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">Who Needs PromoSells?</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="row list-unstyled">
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">Sales Teams</h5>
+                        </li>
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">Field Agents</h5>
+                        </li>
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">Distribution Companies</h5>
+                        </li>
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">FMCG Businesses</h5>
+                        </li>
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">Retail & Wholesale</h5>
+                        </li>
+                        <li class="col-md-6 mb-3 d-flex align-items-center">
+                            <span class="text-adroit-red mr-3" style="font-size: 1.5rem;">•</span>
+                            <h5 class="mb-0 text-dark">NGOs (Outreach)</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: BENEFITS & BROCHURE -->
+    <section class="section-padding bg-adroit-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Text & List -->
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="font-weight-bold mb-3">Why Businesses Choose PromoSells</h2>
+                    <p class="lead text-white-50 mb-4">Empower your team with tools that drive efficiency.</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-adroit-red fa-lg mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Better Accountability</h5>
+                                <p class="text-white-50 mb-0">Track every action of your field staff in real-time.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-adroit-red fa-lg mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Reduced Stock Loss</h5>
+                                <p class="text-white-50 mb-0">Minimize discrepancies with accurate tracking.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-adroit-red fa-lg mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Faster Reporting</h5>
+                                <p class="text-white-50 mb-0">Make data-driven decisions instantly.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-adroit-red fa-lg mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Centralized Data</h5>
+                                <p class="text-white-50 mb-0">One source of truth for all branches and agents.</p>
+                            </div>
+                        </li>
+                        <li class="mb-4 d-flex align-items-start">
+                            <i class="fas fa-check-circle text-adroit-red fa-lg mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-weight-bold mb-1">Operational Efficiency</h5>
+                                <p class="text-white-50 mb-0">Streamline workflows and reduce manual tasks.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right Column: Brochure Image & CTA -->
+                <div class="col-md-6 text-center pl-md-5">
+                    <div class="d-inline-block mb-0" style="max-width: 500px; ">
+                        <img src="images/promosell-brochure1.png" alt="PromoSells Brochure" class="img-fluid rounded"
+                            style="width: 100%; height: auto;">
+                    </div>
+                    <div class="position-relative" style="z-index: 10; margin-top: -60px; padding-bottom: 20px;">
+                        <a href="Promosells_brochure_01.pdf"
+                            class="btn btn-adroit-primary shadow rounded-pill px-4 py-2" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fas fa-file-download mr-2"></i> Download Brochure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: TRAINING VIDEOS -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">Training Videos</h2>
+                <p class="text-muted">Master PromoSells with these step-by-step guides.</p>
+            </div>
+            <div class="row">
+                <!-- Video 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top bg-dark"
+                            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/VIDEO_ID_1" title="Creating a new customer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Creating a new customer without selecting items</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top bg-dark"
+                            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/KjIgtNKLqqo" title="Pick up and sales"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Pick up and sales</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top bg-dark"
+                            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/f09Ae57uJFw" title="Customer details" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Customer details, recording incidents and drop off
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top bg-dark"
+                            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/59vKG--L3hI" title="Creating customer"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Creating a new customer while selecting items for
+                                drop off</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: CALL TO ACTION -->
+    <section class="cta-section section-padding text-center bg-lighter">
+        <div class="container">
+            <h2 class="display-5 font-weight-bold mb-4">Ready to take control of your sales and stock?</h2>
+            <div class="mt-4">
+                <a href="contact.html" class="btn btn-adroit-primary btn-lg px-5 mr-3 shadow">Request Demo</a>
+                <a href="contact.html" class="btn btn-outline-dark btn-lg px-5 shadow">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/Adroit Logo.jpeg" alt="Adroit Bureau" style="width: 150px; margin-bottom: 20px;">
+                    <h4>About Adroit Bureau</h4>
+                    <p>Leading provider of enterprise software solutions across West Africa. Transforming businesses
+                        with innovative technology.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/1CGsfVGQPZ/?mibextid=wwXIfr" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/adroitbureau?igsh=aDZ6ZDdxZzRhMjEx" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/adroit-bureau/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Navigation script moved to footer bottom -->
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#solutions">Products</a></li> <!-- Updated link -->
+                        <li><a href="directors.html">Directors</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <p><strong>Email:</strong><br>info@adroitbureau.com<br>support@adroitbureau.com</p>
+                    <p><strong>Phone:</strong><br>+233 054 142 7906<br>+233 054 123 5271</p>
+                    <p><strong>Address:</strong><br>No. 1 Adole Abla Link, Sahara Dansoman, Accra Ghana</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adroit Bureau. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <!-- I18n Script (Optional for now, but good practice) -->
+    <script src="js/i18n.js"></script>
+</body>
+
+</html>

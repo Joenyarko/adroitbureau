@@ -33,10 +33,8 @@
                         <a href="smart-accounting.html">Smart Accounting</a>
                         <a href="total-accounting.html">Total Accounting</a>
                         <a href="adroit-erp.html">Adroit ERP</a>
-                        <a href="https://adroitbureau.com/tell-them-app.html" target="_blank"
-                            rel="noopener noreferrer">Tell Them App</a>
-                        <a href="https://adroitbureau.com/sampletracker.html" target="_blank"
-                            rel="noopener noreferrer">Promosells</a>
+                        <a href="tell-them-app.html">Tell Them App</a>
+                        <a href="promosells.html">Promosells</a>
                     </div>
                 </div>
 
@@ -127,107 +125,69 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
+    <!-- Benefits & Features Section -->
     <section class="product-benefits-section">
         <div class="container">
-            <h2 class="section-title">Benefits</h2>
+            <h2 class="section-title">Features & Benefits</h2>
             <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>On-Site Support</h3>
+                    <p>Dedicated support engineers available on-site to assist with implementation, training, and
+                        troubleshooting.</p>
+                </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-book"></i>
                     </div>
                     <h3>General Ledger</h3>
-                    <p>Enterprise-grade accounting</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <h3>Account Receivables</h3>
-                    <p>Advanced receivables</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-money-check-alt"></i>
-                    </div>
-                    <h3>Account Payables</h3>
-                    <p>Automated payables</p>
+                    <p>Multi-currency, multi-entity general ledger with unlimited chart of accounts and dimensions.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-boxes"></i>
                     </div>
                     <h3>Inventory</h3>
-                    <p>Multi-warehouse inventory</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-file-invoice"></i>
-                    </div>
-                    <h3>Invoice/Receipts</h3>
-                    <p>Custom invoicing</p>
+                    <p>Advanced inventory management with serial/batch tracking, barcode scanning, and warehouse
+                        optimization.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
                     <h3>Standard Reports</h3>
-                    <p>Executive dashboards</p>
+                    <p>Customizable reports and dashboards with real-time data visualization and drill-down
+                        capabilities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Account Receivables</h3>
+                    <p>Advanced receivables management with automated dunning and credit control.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Account Payables</h3>
+                    <p>Automated payables workflow with purchase order matching and approval routing.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Invoice/Receipts</h3>
+                    <p>Customizable invoicing withrecurring billing and multiple payment gateway integrations.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Email and Phone Support</h3>
-                    <p>24/7 support</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>On-Site Support</h3>
-                    <p>Dedicated on-site team</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Detail Section -->
-    <section class="product-features-detail">
-        <div class="container">
-            <h2 class="section-title">What's Included</h2>
-            <div class="features-detail-grid">
-                <div class="feature-detail-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>On-Site Support</h4>
-                        <p>Dedicated support engineers available on-site to assist with implementation, training, and
-                            troubleshooting.</p>
-                    </div>
-                </div>
-                <div class="feature-detail-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>General Ledger</h4>
-                        <p>Multi-currency, multi-entity general ledger with unlimited chart of accounts and dimensions.
-                        </p>
-                    </div>
-                </div>
-                <div class="feature-detail-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>Inventory</h4>
-                        <p>Advanced inventory management with serial/batch tracking, barcode scanning, and warehouse
-                            optimization.</p>
-                    </div>
-                </div>
-                <div class="feature-detail-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>Standard Reports</h4>
-                        <p>Customizable reports and dashboards with real-time data visualization and drill-down
-                            capabilities.</p>
-                    </div>
+                    <p>24/7 dedicated support to ensure your mission-critical operations never stop.</p>
                 </div>
             </div>
         </div>
@@ -316,39 +276,9 @@
                 });
             }
 
-            // Mobile menu toggle
-            const toggle = document.querySelector('.mobile-toggle');
-            const nav = document.querySelector('.main-nav');
-            if (toggle && nav) {
-                toggle.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                    toggle.classList.toggle('active');
-                });
-            }
-
-            // Dropdown toggle for mobile
-            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-            dropdownToggles.forEach(toggle => {
-                toggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        const parent = toggle.closest('.nav-dropdown');
-                        if (parent) {
-                            // Close other dropdowns
-                            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
-                                if (dropdown !== parent) {
-                                    dropdown.classList.remove('active');
-                                }
-                            });
-                            // Toggle current dropdown
-                            parent.classList.toggle('active');
-                        }
-                    }
-                });
-            });
         });
     </script>
-<script src="js/i18n.js"></script></body>
+    <script src="js/i18n.js"></script>
+</body>
 
 </html>

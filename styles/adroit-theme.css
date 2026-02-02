@@ -79,6 +79,19 @@ a {
   display: block;
 }
 
+/* ===== GLOBAL FIXES ===== */
+/* Hide Bootstrap dropdown carets globally */
+.dropdown-toggle::after,
+.nav-dropdown .dropdown-toggle::after,
+.main-nav .dropdown-toggle::after,
+a.dropdown-toggle::after,
+button.dropdown-toggle::after {
+  display: none !important;
+  content: none !important;
+  border: none !important;
+}
+
+/* ===== NAVIGATION ===== */
 .main-nav {
   display: flex;
   gap: 1.5rem;
@@ -509,7 +522,8 @@ a {
     top: 80px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
+    height: auto;
     background: var(--dark);
     padding: 40px;
     z-index: 999;
@@ -564,6 +578,49 @@ a {
 
   .nav-actions .cta {
     display: none;
+  }
+
+  /* Ensure language switcher is visible and properly sized on mobile */
+  .lang-switcher {
+    display: flex !important;
+    position: relative !important;
+  }
+
+  .lang-switcher .dropdown-toggle {
+    font-size: 0.9rem !important;
+    padding: 5px 10px !important;
+    color: #fff !important;
+    /* Ensure visibility */
+  }
+
+  /* Force Dropdown to Open DOWN, not right */
+  .lang-switcher .dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+    margin-top: 5px !important;
+    min-width: 60px !important;
+    text-align: center !important;
+    background: #000 !important;
+    /* Ensure background matches header */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    display: none;
+    /* Hidden by default */
+  }
+
+  /* Show when active/hover */
+  .lang-switcher:hover .dropdown-menu,
+  .lang-switcher .dropdown-toggle:focus+.dropdown-menu,
+  .lang-switcher.active .dropdown-menu {
+    display: block !important;
+  }
+
+  .lang-switcher .dropdown-menu a {
+    display: block !important;
+    padding: 8px 10px !important;
+    color: #fff !important;
   }
 }
 
@@ -1203,19 +1260,13 @@ a {
 }
 
 /* Red dividers for headings */
-.about-section h2::after,
-.text-center::after {
+.about-section h2::after {
   content: '';
   display: block;
   width: 60px;
   height: 3px;
   background: var(--accent);
   margin-top: 15px;
-}
-
-.text-center::after {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Fix text-center heading alignment */
@@ -2980,4 +3031,464 @@ h2.text-center {
   .blog-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* --- Product Sub-Navigation --- */
+.product-sub-nav {
+  background-color: #b30000;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.product-sub-nav .container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+.product-sub-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.product-sub-nav a:hover,
+.product-sub-nav a.active {
+  color: #ffcccc;
+}
+
+/* --- Video Container --- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Training Videos Section --- */
+.product-training-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.video-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card h4 {
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .product-sub-nav .container {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .product-sub-nav a {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* --- Hero Actions & Sub-links --- */
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.hero-sub-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-sub-links .text-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.hero-sub-links .text-link i {
+  font-size: 1.1rem;
+}
+
+.hero-sub-links .text-link:hover {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .product-hero-grid {
+    grid-template-columns: 1fr;
+    /* Ensure video is on top on mobile if desired, or keep current order */
+  }
+
+  .hero-actions {
+    align-items: center;
+  }
+
+  .hero-sub-links {
+    justify-content: center;
+  }
+}
+
+
+/* --- Flyer Hero & Content --- */
+.flyer-hero-section {
+  padding-top: 0;
+  background: linear-gradient(180deg, #f8f9fa 60%, #fff 60%);
+  text-align: center;
+}
+
+.hero-image-wrapper {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.flyer-content-section {
+  padding: 60px 0;
+}
+
+.features-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature-item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  text-align: left;
+}
+
+.feature-item i {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.campaign-benefit {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.campaign-benefit h4 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.content-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.sub-heading {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.content-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.rounded-shadow {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-divider {
+  border-top: 1px solid #eee;
+  margin: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .hero-video-wrapper {
+    margin: 20px auto;
+    /* Remove overlap on mobile */
+  }
+
+  .flyer-hero-section {
+    background: #fff;
+    /* Plain background on mobile */
+  }
+}
+
+
+/* --- Hero Overlay Styling --- */
+.full-width-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -150px;
+  /* Space for video overlap */
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Optional: limit max-height if image is too tall */
+  /* max-height: 80vh; */
+}
+
+.hero-overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centered */
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.hero-video-wrapper {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  /* Overlap handled by negative margin on hero */
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  /* Push it down to be below the text but overlapping the image bottom */
+  /* top: 0; Overlap handled by margin-bottom of hero */
+}
+
+.hero-title {
+  color: #b30000;
+  /* Dark red text */
+  font-size: 2.2rem;
+  /* Adjusted for image scale */
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.btn-hero-red {
+  background-color: #b30000;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(179, 0, 0, 0.3);
+}
+
+.btn-hero-red:hover {
+  background-color: #8a0000;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(179, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+
+  .btn-hero-red {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Single column override for split layout */
+.features-list-grid.one-col {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+
+.text-adroit-red {
+  color: #b30000 !important;
+}
+
+
+/* Override Bootstrap defaults for header to prevent underlining */
+.site-header a {
+  text-decoration: none !important;
+}
+
+.site-header a:hover {
+  text-decoration: none !important;
+}
+
+
+/* Fix: Override Bootstrap's display:none to allow custom visibility/opacity transition */
+.site-header .dropdown-menu {
+  display: block;
+  visibility: hidden;
+  /* Ensure it starts hidden */
+  opacity: 0;
+}
+
+.site-header .nav-dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* PromoSells Page Styles */
+.promo-hero {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 100px 0;
+}
+
+.hero-mockup {
+  transition: transform 0.3s ease;
+}
+
+.hero-mockup:hover {
+  transform: translateY(-5px);
+}
+
+.problem-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.step-card {
+  padding: 20px;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--adroit-red);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.bg-adroit-red {
+  background-color: var(--adroit-red) !important;
+}
+
+.bg-adroit-dark {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.bg-lighter {
+  background-color: #f9f9f9;
+}
+
+.cta-section {
+  padding: 80px 0;
+}
+
+.btn-adroit-primary {
+  background-color: #b30000;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-adroit-primary:hover {
+  background-color: #cc0000;
+  color: #fff;
 }

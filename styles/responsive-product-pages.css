@@ -1,0 +1,471 @@
+/* ===================================================================
+   MOBILE & TABLET RESPONSIVE OPTIMIZATIONS
+   PromoSells & Tell Them App Pages
+   =================================================================== */
+
+/* Fix for Bootstrap Double Icons - Hide Bootstrap carets and add custom + icon */
+.dropdown-toggle::after,
+.nav-dropdown .dropdown-toggle::after,
+.main-nav .dropdown-toggle::after,
+a.dropdown-toggle::after,
+button.dropdown-toggle::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+}
+
+/* Add custom + icon for mobile dropdowns */
+@media (max-width: 1350px) {
+    .main-nav .dropdown-toggle {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .main-nav .dropdown-toggle::after {
+        content: '+' !important;
+        display: inline-block !important;
+        margin-left: auto !important;
+        font-size: 1.3rem !important;
+        font-weight: 300 !important;
+        transition: transform 0.3s ease !important;
+        order: 2 !important;
+    }
+
+    .main-nav .nav-dropdown.active .dropdown-toggle::after {
+        content: '−' !important;
+        /* Minus sign when expanded */
+    }
+}
+
+/* Tablet Optimization (768px - 1024px) */
+@media (max-width: 1024px) {
+
+    /* PromoSells & Tell Them App - Hero Sections */
+    .promo-hero h1,
+    .flyer-hero-section h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.3 !important;
+    }
+
+    .promo-hero .lead,
+    .flyer-hero-section .lead {
+        font-size: 1.1rem !important;
+    }
+
+    /* Training Videos Grid */
+    .training-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    /* Feature Cards */
+    .feature-item h5 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Step Cards */
+    .step-card {
+        padding: 25px !important;
+    }
+
+    .step-card h3 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Brochure Section - 2 Column Layout */
+    .col-md-6.pl-md-5 {
+        padding-left: 15px !important;
+    }
+
+    /* PromoSells Hero - Reorder on Mobile: Image first, then button */
+    .promo-hero .row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .promo-hero .col-lg-6:first-child {
+        order: 2 !important;
+        /* Text content goes second */
+    }
+
+    .promo-hero .col-lg-6:last-child {
+        order: 1 !important;
+        /* Image goes first */
+    }
+
+}
+
+/* Mobile Optimization (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* PromoSells & Tell Them App - Hero Sections */
+    .promo-hero,
+    .flyer-hero-section {
+        padding: 40px 0 !important;
+    }
+
+    .promo-hero h1,
+    .flyer-hero-section h1,
+    .hero-title {
+        font-size: 1.75rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .promo-hero .lead,
+    .flyer-hero-section .lead {
+        font-size: 1rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Hero Buttons */
+    .hero-btns .btn,
+    .btn-hero-red {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 0 10px 0 !important;
+        padding: 12px 20px !important;
+        font-size: 1rem !important;
+    }
+
+    /* Hero Image Wrapper */
+    .hero-image-wrapper {
+        margin-bottom: 30px !important;
+    }
+
+    .hero-bg-img {
+        max-height: 300px !important;
+        object-fit: cover !important;
+    }
+
+    /* Hero Video Wrapper */
+    .hero-video-wrapper {
+        margin-top: 30px !important;
+        padding: 0 15px !important;
+    }
+
+    .video-container {
+        margin-bottom: 20px !important;
+    }
+
+    /* Section Headings */
+    h2.font-weight-bold,
+    h2.display-5 {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+    }
+
+    h3 {
+        font-size: 1.3rem !important;
+    }
+
+    /* Problem Cards Grid - Stack on Mobile */
+    .problem-card {
+        margin-bottom: 15px !important;
+    }
+
+    /* Feature Grid - Single Column */
+    .feature-item {
+        margin-bottom: 20px !important;
+    }
+
+    .feature-item .icon {
+        margin-right: 15px !important;
+    }
+
+    .feature-item h5 {
+        font-size: 1rem !important;
+    }
+
+    /* Step Cards - Single Column */
+    .step-card {
+        padding: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .step-card .step-number {
+        font-size: 2rem !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .step-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Training Videos Grid - Single Column */
+    .training-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .video-card {
+        margin-bottom: 20px !important;
+    }
+
+    .video-card h4 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Video Wrapper - Responsive Aspect Ratio */
+    .video-wrapper {
+        position: relative !important;
+        padding-bottom: 56.25% !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .video-wrapper iframe {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* Brochure Section - Stack on Mobile */
+    .col-md-6.text-center.pl-md-5 {
+        padding-left: 15px !important;
+        margin-top: 30px !important;
+    }
+
+    /* Brochure Image */
+    .d-inline-block[style*="max-width: 500px"] {
+        max-width: 100% !important;
+    }
+
+    /* Download Button */
+    .btn-adroit-primary {
+        font-size: 0.95rem !important;
+        padding: 10px 20px !important;
+    }
+
+    /* Target Audience Cards */
+    .audience-card {
+        margin-bottom: 20px !important;
+    }
+
+    /* Benefits List */
+    .features-list-grid {
+        gap: 15px !important;
+    }
+
+    /* CTA Section */
+    .cta-section h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .cta-section .btn {
+        display: block !important;
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+
+    /* Flyer Content Section */
+    .flyer-content-section .row {
+        margin-bottom: 30px !important;
+    }
+
+    .flyer-content-section img {
+        margin-bottom: 20px !important;
+    }
+
+    /* Campaign Benefits */
+    .campaign-benefit {
+        margin-bottom: 20px !important;
+    }
+
+    /* Content Blocks */
+    .content-block {
+        padding: 30px 20px !important;
+    }
+
+    /* Section Padding */
+    .section-padding {
+        padding: 40px 0 !important;
+    }
+
+    /* Product CTA Section */
+    .product-cta-section {
+        padding: 50px 0 !important;
+    }
+
+    .btn-cta-large {
+        font-size: 1rem !important;
+        padding: 12px 30px !important;
+    }
+}
+
+/* Small Mobile Optimization (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* Further reduce hero text */
+    .promo-hero h1,
+    .flyer-hero-section h1,
+    .hero-title {
+        font-size: 1.5rem !important;
+    }
+
+    .promo-hero .lead,
+    .flyer-hero-section .lead {
+        font-size: 0.95rem !important;
+    }
+
+    /* Section Headings */
+    h2.font-weight-bold,
+    h2.display-5 {
+        font-size: 1.3rem !important;
+    }
+
+    h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Buttons */
+    .btn,
+    .btn-lg {
+        font-size: 0.9rem !important;
+        padding: 10px 15px !important;
+    }
+
+    /* Step Number */
+    .step-card .step-number {
+        font-size: 1.5rem !important;
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    /* Icons */
+    .fa-2x {
+        font-size: 1.5rem !important;
+    }
+
+    /* Spacing */
+    .section-padding {
+        padding: 30px 0 !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Container Padding */
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Problem Cards */
+    .problem-card {
+        padding: 20px 15px !important;
+    }
+
+    /* Feature Items */
+    .feature-item .icon {
+        margin-right: 10px !important;
+    }
+
+    /* Content Text */
+    .content-text {
+        font-size: 0.9rem !important;
+    }
+
+    /* Hero Overlay Content */
+    .hero-overlay-content {
+        padding: 20px !important;
+    }
+
+    .hero-overlay-content h1 {
+        font-size: 1.3rem !important;
+    }
+
+    .btn-hero-red {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-bg-img {
+        max-height: 250px !important;
+    }
+
+    .promo-hero,
+    .flyer-hero-section {
+        padding: 30px 0 !important;
+    }
+
+    .section-padding {
+        padding: 30px 0 !important;
+    }
+}
+
+/* Ensure Video Embeds are Responsive */
+@media (max-width: 768px) {
+
+    /* PromoSells Training Videos */
+    .card-img-top[style*="padding-bottom: 56.25%"] {
+        padding-bottom: 56.25% !important;
+    }
+
+    /* Tell Them App Training Videos */
+    .video-wrapper {
+        position: relative !important;
+        padding-bottom: 56.25% !important;
+        height: 0 !important;
+    }
+
+    .video-wrapper iframe,
+    .card-img-top iframe {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        border: none !important;
+    }
+}
+
+/* Fix Bootstrap Grid Stacking on Mobile */
+@media (max-width: 767px) {
+
+    .col-md-6,
+    .col-md-4,
+    .col-md-3 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Ensure proper spacing when stacked */
+    .row>[class*="col-"] {
+        margin-bottom: 20px !important;
+    }
+
+    .row>[class*="col-"]:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Tablet Landscape (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .training-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .promo-hero h1,
+    .flyer-hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+}

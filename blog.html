@@ -33,10 +33,8 @@
                         <a href="smart-accounting.html">Smart Accounting</a>
                         <a href="total-accounting.html">Total Accounting</a>
                         <a href="adroit-erp.html">Adroit ERP</a>
-                        <a href="https://adroitbureau.com/tell-them-app.html" target="_blank"
-                            rel="noopener noreferrer">Tell Them App</a>
-                        <a href="https://adroitbureau.com/sampletracker.html" target="_blank"
-                            rel="noopener noreferrer">Promosells</a>
+                        <a href="tell-them-app.html">Tell Them App</a>
+                        <a href="promosells.html">Promosells</a>
                     </div>
                 </div>
 
@@ -229,39 +227,9 @@
                 });
             }
 
-            // Mobile menu toggle
-            const toggle = document.querySelector('.mobile-toggle');
-            const nav = document.querySelector('.main-nav');
-            if (toggle && nav) {
-                toggle.addEventListener('click', () => {
-                    nav.classList.toggle('active');
-                    toggle.classList.toggle('active');
-                });
-            }
-
-            // Dropdown toggle for mobile
-            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-            dropdownToggles.forEach(toggle => {
-                toggle.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        const parent = toggle.closest('.nav-dropdown');
-                        if (parent) {
-                            // Close other dropdowns
-                            document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
-                                if (dropdown !== parent) {
-                                    dropdown.classList.remove('active');
-                                }
-                            });
-                            // Toggle current dropdown
-                            parent.classList.toggle('active');
-                        }
-                    }
-                });
-            });
         });
     </script>
-<script src="js/i18n.js"></script></body>
+    <script src="js/i18n.js"></script>
+</body>
 
 </html>
