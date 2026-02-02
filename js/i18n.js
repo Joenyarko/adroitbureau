@@ -36,6 +36,7 @@ const translations = {
     "Transforming Businesses with Intelligent IT Solutions": "Transformer les entreprises avec des solutions informatiques intelligentes",
     "We design 100% customized ERP software for industries and deliver secure, scalable systems that streamline operations, boost productivity, and drive measurable business growth.": "Nous concevons des logiciels ERP 100% personnalisés pour les industries et fournissons des systèmes sécurisés et évolutifs qui rationalisent les opérations, augmentent la productivité et stimulent la croissance.",
     "GET IN TOUCH": "CONTACTEZ-NOUS",
+    "Learn More": "En Savoir Plus",
 
     "Building Powerful Digital Solutions for Modern Enterprises": "Des solutions numériques puissantes pour les entreprises modernes",
     "From custom desktop, web, and mobile applications to fully tailored enterprise systems, Adroit Bureau delivers reliable, secure technology built around your business needs.": "Des applications sur mesure aux systèmes d'entreprise complets, Adroit Bureau fournit une technologie fiable et sécurisée adaptée à vos besoins.",
