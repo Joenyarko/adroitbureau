@@ -513,6 +513,7 @@ const translations = {
     "Motor Dealership": "Concessionnaire Automobile",
     "Sachet Water": "Eau en Sachet",
     "Factory": "Usine",
+    "Manufacturing": "Fabrication",
     "Construction": "Construction",
     "Real Estate": "Immobilier",
     "Mining": "Exploitation Minière",
