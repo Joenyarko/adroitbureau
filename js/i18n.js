@@ -33,6 +33,9 @@ const translations = {
     "SWL Learn": "SWL Learn",
 
     // --- Hero Slides (Index) ---
+    "HeroTitle1": "Solutions logicielles ERP personnalisées pour plus de 100 industries",
+    "HeroDesc1": "Nous fournissons des logiciels ERP 100 % personnalisés et adaptés à plus de 100 industries. Nos systèmes sécurisés et évolutifs sont conçus pour rationaliser les opérations et stimuler la croissance de l'entreprise.",
+    "GetInTouch": "CONTACTEZ-NOUS",
     "Transforming Businesses with Intelligent IT Solutions": "Transformer les entreprises avec des solutions informatiques intelligentes",
     "We design 100% customized ERP software for industries and deliver secure, scalable systems that streamline operations, boost productivity, and drive measurable business growth.": "Nous concevons des logiciels ERP 100% personnalisés pour les industries et fournissons des systèmes sécurisés et évolutifs qui rationalisent les opérations, augmentent la productivité et stimulent la croissance.",
     "GET IN TOUCH": "CONTACTEZ-NOUS",
