@@ -589,7 +589,12 @@ const translations = {
     "Legal Firm": "Cabinet Juridique",
     "Microfinance": "Microfinance",
     "Insurance": "Assurance",
-    "Audit": "Audit"
+    "Audit": "Audit",
+
+    // --- Industry Page CTAs ---
+    "AndManyMore": "Et bien plus encore...",
+    "CantFindIndustry": "Vous ne trouvez pas votre industrie ?",
+    "ContactCustomERP": "Contactez-nous pour votre logiciel ERP personnalisé"
 };
 
 document.addEventListener('DOMContentLoaded', function () {
