@@ -246,7 +246,7 @@ button.dropdown-toggle::after {
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .slide-content {
