@@ -97,8 +97,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
                     <h2>Send Us a Message</h2>
-                    <form class="contact-form" action="#" method="POST"
-                        onsubmit="alert('This form is disabled in the static version.'); return false;">
+                    <form class="contact-form" id="contact-form" action="#" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -237,6 +236,8 @@
         });
     </script>
     <script src="js/i18n.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/email-handler.js"></script>
 </body>
 
 </html>
