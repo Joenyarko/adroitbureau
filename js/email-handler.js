@@ -1,7 +1,6 @@
 (function () {
     // Initialize EmailJS
-    // REPLACE WITH YOUR PUBLIC KEY
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("Z5EB0A8n4IxJqdosw");
 
     document.addEventListener('DOMContentLoaded', function () {
         // Handle Contact Form
@@ -21,15 +20,14 @@
                 const templateParams = {
                     from_name: this.elements['name'].value,
                     from_email: this.elements['email'].value,
-                    phone: this.elements['phone'].value,
-                    subject: this.elements['subject'].value,
+                    from_contact: this.elements['phone'].value, // Mapped to from_contact
+                    title: this.elements['subject'].value,      // Mapped to title
                     message: this.elements['message'].value,
-                    to_name: "Adroit Bureau", // Optional, if used in template
+                    to_name: "Adroit Bureau",
                 };
 
                 // Send email
-                // REPLACE WITH YOUR SERVICE ID AND TEMPLATE ID
-                emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                emailjs.send('service_v2vzdoq', 'template_jpojh1n', templateParams)
                     .then(function () {
                         alert('Message sent successfully!');
                         contactForm.reset();
