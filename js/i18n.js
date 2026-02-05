@@ -92,8 +92,8 @@ const translations = {
     "The company was started as a partnership with the name": "L'entreprise a débuté sous la forme d'un partenariat nommé",
     "Adroit Technologies": "Adroit Technologies", // Proper noun
     "The company was started as a partnership with the name Adroit Technologies in 2009. At this time the founders were about completing their undergraduate degrees.": "L'entreprise a débuté en tant que partenariat sous le nom Adroit Technologies en 2009. À cette époque, les fondateurs terminaient leurs diplômes.",
-    "In 2014, Adroit Bureau Ltd. was registered as a limited liability company and our flagship product 'Total Accounting' was launched.": "En 2014, Adroit Bureau Ltd. a été enregistrée en tant que société à responsabilité limitée et notre produit phare 'Total Accounting' a été lancé.",
-    "By 2021, Adroit Bureau Ltd. evolved into a software holding company with multiple subsidiaries, dedicated to providing appropriate software systems for business productivity suited for African conditions.": "En 2021, Adroit Bureau Ltd. est devenue une société de portefeuille de logiciels avec plusieurs filiales, dédiée à fournir des systèmes logiciels appropriés pour la productivité des entreprises adaptés aux conditions africaines.",
+    "History2014": "En 2014, Adroit Bureau Ltd. a été enregistrée en tant que société à responsabilité limitée et notre produit phare 'Total Accounting' a été lancé.",
+    "History2021": "En 2021, Adroit Bureau Ltd. est devenue une société de portefeuille de logiciels avec plusieurs filiales, dédiée à fournir des systèmes logiciels appropriés pour la productivité des entreprises adaptés aux conditions africaines.",
 
     "Our Vision": "Notre Vision",
     "To power Africa's sustainable Industrialization by providing appropriate Software Systems for Business Productivity suited for conditions on the continent.": "Propulser l'industrialisation durable de l'Afrique en fournissant des systèmes logiciels de productivité adaptés aux conditions du continent.",
