@@ -29,12 +29,22 @@
                 // Send email
                 emailjs.send('service_v2vzdoq', 'template_jpojh1n', templateParams)
                     .then(function () {
-                        alert('Message sent successfully!');
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Message Sent!',
+                            text: 'We will get back to you shortly.',
+                            confirmButtonColor: '#d62400'
+                        });
                         contactForm.reset();
                         submitBtn.innerText = originalText;
                         submitBtn.disabled = false;
                     }, function (error) {
-                        alert('Failed to send message. Please try again.');
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong. Please try again.',
+                            confirmButtonColor: '#d62400'
+                        });
                         console.error('EmailJS Error:', error);
                         submitBtn.innerText = originalText;
                         submitBtn.disabled = false;
