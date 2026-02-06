@@ -599,7 +599,16 @@ const translations = {
     "Legal Firm": "Cabinet Juridique",
     "Microfinance": "Microfinance",
     "Insurance": "Assurance",
+    "Eye Clinic": "Clinique Ophtalmologique",
     "Audit": "Audit",
+
+    // --- PromoSells Features (Missing) ---
+    "Real-time Dashboard": "Tableau de Bord en Temps Réel",
+    "Visual reports for instant business insights.": "Rapports visuels pour des informations commerciales instantanées.",
+    "Mobile & Web Access": "Accès Mobile & Web",
+    "Access your data on any device, anytime.": "Accédez à vos données sur n'importe quel appareil, à tout moment.",
+    "Intuitive Mobile App": "Application Mobile Intuitive",
+    "Comprehensive Web Dashboard": "Tableau de Bord Web Complet",
 
     // --- Industry Page CTAs ---
     "AndManyMore": "Et bien plus encore...",
